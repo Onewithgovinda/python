@@ -1,0 +1,10 @@
+x=10
+print(x,type(x))
+x="govinda"
+print(x,type(x))
+x=True
+print(x,type(x))
+x=3123456789012345678901234567890123456789
+print(x,type(x))
+a=None
+print(type(a))
