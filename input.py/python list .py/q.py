@@ -11,3 +11,13 @@ if prime:
 else:
     print(f"{n} is not a prime number.")
         
+
+
+items = [1, 2, 2, 3, 4, 4, 4, 5] 
+first = items[0]
+for i in items:
+    if i > first:
+        first = i
+    
+
+    

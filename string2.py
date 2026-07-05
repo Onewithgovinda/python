@@ -19,12 +19,12 @@ print(s.strip())
 
 
 
-# # # # # # # *********************************************************************
 
 
 
+# <<<<<<< HEAD
 s = "Python is fun and Python is powerful"
-find() — index of first match, returns -1 if not found
+# find() — index of first match, returns -1 if not found
 print(s.find("Python")) # 0
 print(s.find("Python", 5)) # 18 ← search from index 5 onward
 print(s.find("Java")) # -1 ← not found, NO error
@@ -40,11 +40,49 @@ print(s.find("Python",2))
 
 print(s.find("java"))
 # # # # # # # 
+#=======
+
+# *********************************************************************
 
 
 
+s = "Python is fun and Python is powerful"
+#find() — index of first match, returns -1 if not found
+print(s.find("Python")) # 0
+print(s.find("Python", 5)) # 18 ← search from index 5 onward
+print(s.find("Java")) # -1 ← not found, NO error
+# index() — same as find() but raises ValueError if not found
+print(s.index("is")) # 7
+# s.index("Java") # ■ ValueError: substring not found
+# count() — how many times does substring appear?
+print(s.count("Python")) # 2
+print(s.count("is")) # 2
+print("banana".count("an")) # 2
+
+print(s.find("Python",2))
+
+print(s.find("java"))
+# >>>>>>> 5b3405a (5 practice solutions in a file video11_2_problems)
 
 
+# =======
+#     print(f"{item:<10} ${price:>5.2f}")
+
+# # name = "govinda"
+# # print(f"my name is : {name}")
+# scor= 89
+# print(f"i got this marks : {scor}")
+
+
+s = '1234'
+print("hello1234".isalpha())
+print("12345".isdigit())
+print("hello123".isalpha())
+
+# <<<<<<< HEAD
+# =======
+
+# >>>>>>> 5b3405a (5 practice solutions in a file video11_2_problems)
 s = "I love Java, Java is great"
 # Replace ALL occurrences by default
 print(s.replace("Java", "Python")) # I love Python, Python is great
@@ -56,7 +94,11 @@ print(s.replace("Java, ", "")) # I love Java is great
 
 
 
-Default split — splits on ANY whitespace
+# <<<<<<< HEAD
+# Default split — splits on ANY whitespace
+# =======
+# #Default split — splits on ANY whitespace
+# >>>>>>> 5b3405a (5 practice solutions in a file video11_2_problems)
 s = " one two three "
 print(s.split()) # ['one', 'two', 'three'] — also strips spaces!
 # Split on specific separator
@@ -99,9 +141,10 @@ print("42".zfill(5)) # "00042"
 print("7".zfill(4)) # "0007"
 # Real use — printing formatted table
 for item, price in [("Apple",12),("Mango",25),("Banana",8)]:
+# <<<<<<< HEAD
 
 
-name = "govinda"
+ name = "govinda"
 print(f"my name is : {name}")
 # scor= 89
 # print(f"i got this marks : {scor}")
@@ -132,6 +175,41 @@ num = "7"
 print(num.zfill(4))
 
 
+# =======
+#     print(f"{item:<10} ${price:>5.2f}")
+
+# # name = "govinda"
+# # print(f"my name is : {name}")
+# scor= 89
+# print(f"i got this marks : {scor}")
+
+
+s = '1234'
+print("hello1234".isalpha())
+print("12345".isdigit())
+print("hello123".isalpha())
+
+# s='This is bad code with bad habits'
+# print(s.replace("bad","good"))
+s = 'one:two:three'
+print(s.split(":"))
+# s = ['Python', 'is', 'fun']
+# print(" ".join(s))
+s = "Python"
+
+print(s.startswith("Py"))
+print(s.endswith("on"))
+
+
+name = "Govinda"
+
+print(name.rjust(30))
+num = "7"
+
+print(num.zfill(4))
+
+
+# >>>>>>> 5b3405a (5 practice solutions in a file video11_2_problems)
 x ='govnida'
 y=89.9
 print(f'My name is {x} and my score is {y}')
