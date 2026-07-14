@@ -9,4 +9,4 @@ for ch in "banana":
 
 # missing keys start at 0
 
-# {'b' : 1, 'a': 3, 'n':
+# {'b' : 1, 'a': 3, 'n'
